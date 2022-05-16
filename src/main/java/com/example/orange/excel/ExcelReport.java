@@ -1,6 +1,7 @@
 package com.example.orange.excel;
 
 import com.example.orange.controllers.ExchangerController;
+import com.example.orange.util.PropertyReader;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -13,15 +14,21 @@ import java.sql.*;
 
 public class ExcelReport {
 
+    private static final String DB_URL = PropertyReader.JDBC_URL;
+    private static final String POSTGRE_DRIVER = PropertyReader.POSTGRE_DRIVER;
+    private static final String DB_USERNAME = PropertyReader.DATABASE_USERNAME;
+    private static final String DB_PASSWORD = PropertyReader.DATABASE_PASSWORD;
+    private static final String EXCEL_PATH = PropertyReader.EXCEL_PATH;
+
     private ExcelReport() { }
 
     static Logger log = LoggerFactory.getLogger(ExcelReport.class);
 
     public static void createExcel(String data) throws Exception {
 
-        Class.forName("org.postgresql.Driver");
+        Class.forName(POSTGRE_DRIVER);
         Connection connection = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/orange", "postgres", "2121");
+                DB_URL, DB_USERNAME, DB_PASSWORD);
 
         Statement statement = connection.createStatement();
 
@@ -104,7 +111,7 @@ public class ExcelReport {
 
         String excelName = "Report_" + java.time.LocalDate.now()+ ".xlsx";
         FileOutputStream output = new FileOutputStream(new File(
-                "C:\\Users\\suruc\\Desktop\\orange\\src\\main\\resources\\excel/" + excelName));
+                EXCEL_PATH + excelName));
 
         // write
         workbook.write(output);
