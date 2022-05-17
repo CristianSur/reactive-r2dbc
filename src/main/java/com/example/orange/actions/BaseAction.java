@@ -138,7 +138,7 @@ public class BaseAction {
             HttpEntity entity = httpResponse.getEntity();
             R response = null;
 
-            if ( entity != null && !stringBuilder.toString().contains("cash")) {
+            if ( entity != null && !stringBuilder.toString().contains("cash") && !stringBuilder.toString().contains("transaction")) {
                 String rawHttpResponseBody = EntityUtils.toString(entity);
                 response = OBJECT_MAPPER.readValue(rawHttpResponseBody, responseType);
             } else {

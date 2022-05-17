@@ -11,6 +11,19 @@ import static com.example.orange.actions.BaseAction.get;
 
 public class RatesAction {
 
+//    public static BaseResponseDTO ratesInserting(Long currencyId, Integer nominal, Double value) {
+//        String url = "http://localhost:8080/rates/new";
+//
+//        Map<String, String> headers = new HashMap<>();
+//        headers.put("Content-Type", "application/json");
+//
+//        return post(url,
+//                null,
+//                headers,
+//                new ExchangeRate(currencyId,nominal, value),
+//                BaseResponseDTO.class);
+//    }
+
     public static BaseResponseDTO ratesInserting(Long currencyId, Integer nominal, Double value) {
         String url = "http://localhost:8080/rates/new";
 

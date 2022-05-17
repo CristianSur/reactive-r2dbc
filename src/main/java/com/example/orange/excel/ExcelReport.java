@@ -12,13 +12,15 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 import java.sql.*;
 
+import static com.example.orange.util.PropertyReader.*;
+
 public class ExcelReport {
 
-    private static final String DB_URL = PropertyReader.JDBC_URL;
-    private static final String POSTGRE_DRIVER = PropertyReader.POSTGRE_DRIVER;
-    private static final String DB_USERNAME = PropertyReader.DATABASE_USERNAME;
-    private static final String DB_PASSWORD = PropertyReader.DATABASE_PASSWORD;
-    private static final String EXCEL_PATH = PropertyReader.EXCEL_PATH;
+    private static final String DB_URL = PropertyReader.getProperty(JDBC_URL);
+    private static final String POSTGRESQL_DRIVER = PropertyReader.getProperty(POSTGRE_DRIVER);
+    private static final String DB_USERNAME = PropertyReader.getProperty(DATABASE_USERNAME);
+    private static final String DB_PASSWORD = PropertyReader.getProperty(DATABASE_PASSWORD);
+    private static final String EXCEL_PATH_DATA = PropertyReader.getProperty(EXCEL_PATH);
 
     private ExcelReport() { }
 
@@ -26,7 +28,7 @@ public class ExcelReport {
 
     public static void createExcel(String data) throws Exception {
 
-        Class.forName(POSTGRE_DRIVER);
+        Class.forName(POSTGRESQL_DRIVER);
         Connection connection = DriverManager.getConnection(
                 DB_URL, DB_USERNAME, DB_PASSWORD);
 
@@ -111,7 +113,7 @@ public class ExcelReport {
 
         String excelName = "Report_" + java.time.LocalDate.now()+ ".xlsx";
         FileOutputStream output = new FileOutputStream(new File(
-                EXCEL_PATH + excelName));
+                EXCEL_PATH_DATA + excelName));
 
         // write
         workbook.write(output);

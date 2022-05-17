@@ -21,7 +21,7 @@ public class PropertyReader {
         Properties properties = new Properties();
 
         try {
-            properties.load(new FileInputStream(new File("config.properties")));
+            properties.load(new FileInputStream(new File("C:\\Users\\suruc\\Desktop\\orange\\src\\main\\resources\\config.properties")));
         } catch (Exception e) {
             e.printStackTrace();
         }

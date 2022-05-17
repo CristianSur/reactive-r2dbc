@@ -24,4 +24,10 @@ public class Exchanger  {
     Double withdrawn;
     Timestamp date;
 
+    public Exchanger(Long operatorId, Long currencyIdRecieved, Long currencyIdWithdrawn, Double received) {
+        this.operatorId = operatorId;
+        this.currencyIdReceived = currencyIdRecieved;
+        this.currencyIdWithdrawn = currencyIdWithdrawn;
+        this.received = received;
+    }
 }
