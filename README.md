@@ -17,6 +17,8 @@ port: 9090
   config.properties in care sunt salvate careva constante ca de exemplul drumul pe care se va salva Excel file (report) sau datele pentru
   baza de date. (In propertyReader trebuie de pus absolutePath la locatia config.properties, am uitat sa clarific).
   
+  Initial aveam insertarea sutei de date din diverse XML prin stream, dar totusi in conditie se cerea .sql asa ca a fost sters.
+  
   Excel file cu istoria transactiilor de ziua curenta se poate primi pe adresa http://localhost:9090/exchanger/excel
   In Excel datele arata mai user friendly, in loc de numar a operatorului e numele acestuia (ca de exemplu)
   
