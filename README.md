@@ -1,6 +1,6 @@
 # reactive-r2dbc
 
-Un cuvant inainte --
+Un cuvant inainte \n
   Am fost uimit cand vazusem termen maxim de o zi, daca sa nu i-ai in considerare jobul (uneori si universitate), ar arata mai posibil.
   Insusi taskul nu pare dificil de fel, mult timp ia acel fapt, ca e nevoie de folosit multe tehnici noi si uneori 
   te stopezi la un bug din neatentie. Am dovedit sa fac doar jumatate din cele planuite, nici conectarea cu bnm.md nu am reusit sa o fac,
