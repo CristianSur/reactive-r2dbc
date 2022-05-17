@@ -14,14 +14,15 @@ Lansarea programului
   baza de date. (In propertyReader trebuie de pus absolutePath la config.properties, am uitat sa clarific).
   
   Excel file cu istoria transactiilor de ziua curenta se poate primi pe adresa http://localhost:8080/exchanger/excel
+  In Excel datele arata mai normal, in loc de numar a operatorului e numele acestuia (ca de exemplu)
   
- Cea mai multa functionalitate este anume in schimbul valutar, nu am dovedit sa scriu teste dar este totusi unul, case simuleaza post request. 
- Pentru a facec un schimb e nevoie de trimis un post cu body in care sa fie id'ul operatorului, id'ul valutei transmisa si celei primite si desigur ca suma.
+ Cea mai multa functionalitate este anume in schimbul valutar, nu am dovedit sa scriu teste dar este totusi unul, care face post request. 
+ Pentru a face un schimb e nevoie de trimis un post cu body in care sa fie id'ul operatorului, id'ul valutei transmisa si celei primite si desigur ca suma.
  Deja in program se face tranferul (fara procent, cursul e constant deoarece programul e scris de un om bun)
  
  Concluzia
  
  Mie cu adevarat mi-a placut sa fac acest task si sunt extrem de interesat in faptul, ca sa ma dezvolt in acest curent. Daca este ocazia, sunt gata 
- sa fac mai multe taskuri, ele ajuta sa te "incadrezi" intr-un fel.
+ sa fac mai multe taskuri pentru a nu dezamagi.
   
   
