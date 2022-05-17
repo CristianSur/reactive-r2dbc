@@ -12,10 +12,12 @@ Un cuvant inainte
   
 Lansarea programului 
 port: 9090
+ 
 
   In resource se aflu 2 sql files, unul care creaza tabelele si altul care inserteaza datele in ele (ele se pornesc pe rand). La fel acolo se afla si
   config.properties in care sunt salvate careva constante ca de exemplul drumul pe care se va salva Excel file (report) sau datele pentru
-  baza de date. (In propertyReader trebuie de pus absolutePath la locatia config.properties, am uitat sa clarific).
+  baza de date. (In propertyReader trebuie de pus absolutePath la locatia config.properties, am uitat sa clarific). La fel PropertyReader existent
+  este doar pentru aceasta etapa, ele nu ar functiona cum se cade in afara de IDE.
   
   Initial aveam insertarea sutei de date din diverse XML prin stream, dar totusi in conditie se cerea .sql asa ca a fost sters.
   
