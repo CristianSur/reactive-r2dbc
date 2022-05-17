@@ -11,12 +11,13 @@ Un cuvant inainte
   Nu pot sa spun ca e un project curat, dar arata fix atat de calitativ si chiar mai mult, decat se merita pentru timpul scurt ce a fost investit.
   
 Lansarea programului 
+port: 9090
 
   In resource se aflu 2 sql files, unul care creaza tabelele si altul care inserteaza datele in ele (ele se pornesc pe rand). La fel acolo se afla si
   config.properties in care sunt salvate careva constante ca de exemplul drumul pe care se va salva Excel file (report) sau datele pentru
   baza de date. (In propertyReader trebuie de pus absolutePath la locatia config.properties, am uitat sa clarific).
   
-  Excel file cu istoria transactiilor de ziua curenta se poate primi pe adresa http://localhost:8080/exchanger/excel
+  Excel file cu istoria transactiilor de ziua curenta se poate primi pe adresa http://localhost:9090/exchanger/excel
   In Excel datele arata mai user friendly, in loc de numar a operatorului e numele acestuia (ca de exemplu)
   
  Cea mai multa functionalitate este anume in schimbul valutar, nu am dovedit sa scriu teste dar este totusi unul, care face post request.
