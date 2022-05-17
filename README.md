@@ -14,7 +14,7 @@ Lansarea programului
 
   In resource se aflu 2 sql files, unul care creaza tabelele si altul care inserteaza datele in ele (ele se pornesc pe rand). La fel acolo se afla si
   config.properties in care sunt salvate careva constante ca de exemplul drumul pe care se va salva Excel file (report) sau datele pentru
-  baza de date. (In propertyReader trebuie de pus absolutePath la config.properties, am uitat sa clarific).
+  baza de date. (In propertyReader trebuie de pus absolutePath la locatia config.properties, am uitat sa clarific).
   
   Excel file cu istoria transactiilor de ziua curenta se poate primi pe adresa http://localhost:8080/exchanger/excel
   In Excel datele arata mai user friendly, in loc de numar a operatorului e numele acestuia (ca de exemplu)
