@@ -8,7 +8,8 @@ Un cuvant inainte
   Am reusit doar jumatate din cele planuite, vroiam sa fie si conectarea la bnm.md, dar, cred eu, 
   ca mai bine de aratat asa cum este la moment. Mai departe voi continua proiectul deja singur, pentru sine.
   
-  Nu pot sa spun ca e un project curat, dar arata fix atat de calitativ si chiar mai mult, decat se merita pentru timpul scurt ce a fost investit.
+  Nu pot sa spun ca e un project curat, dar arata fix atat de calitativ si chiar mai mult, decat se merita pentru timpul scurt ce a fost investit. 
+  Mi-a luat circa 2 zile intregi.
   
 Lansarea programului 
 port: 9090
