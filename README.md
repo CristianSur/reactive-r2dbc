@@ -1,5 +1,7 @@
 # reactive-r2dbc
 
+Din cauza ca aceasta este un stack de tehnologii noi, am avut nevoie de multa documentarea,
+in total mi-a luat 2 zile pline
   
 Lansarea programului 
 port: 9090
