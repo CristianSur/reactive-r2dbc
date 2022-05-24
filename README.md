@@ -12,7 +12,7 @@ port: 9090
   baza de date. (In propertyReader trebuie de pus absolutePath la locatia config.properties, am uitat sa clarific). La fel PropertyReader existent
   este doar pentru aceasta etapa, ele nu ar functiona cum se cade in afara de IDE.
   
-  Initial aveam insertarea sutei de date din diverse XML prin stream, dar totusi in conditie se cerea .sql asa ca a fost sters.
+  Initial aveam insertarea sutei de date din diverse XML prin stream sau apeland direct la bnm.md, va fi adaugat deja cu timpul
   
   Excel file cu istoria transactiilor de ziua curenta se poate primi pe adresa http://localhost:9090/exchanger/excel
   In Excel datele arata mai user friendly, in loc de numar a operatorului e numele acestuia (ca de exemplu)
