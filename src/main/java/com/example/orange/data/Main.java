@@ -20,6 +20,15 @@
 //
 //        FileReader fileReader = new FileReader(xmlFile);
 //        BufferedReader rd = new BufferedReader(fileReader);
+//===========================
+//        HttpClient client = new DefaultHttpClient();
+//                HttpGet request = new HttpGet(PropertyReader.getProperty("bnmUrl"));
+//                HttpResponse response = client.execute(request);
+//
+//                //Get the response
+//                BufferedReader rd = new BufferedReader(new InputStreamReader(
+//                response.getEntity().getContent()));
+//============================
 //        String line = "";
 //        String fullResponse = "";
 //
